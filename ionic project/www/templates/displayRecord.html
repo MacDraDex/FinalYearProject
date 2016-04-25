@@ -2,34 +2,34 @@
     <ion-content class="has-header" overflow-scroll="true" padding="true">
         <ion-list style="">
                <div ng-controller="ctrlCustomers"> 
-                   <div class="row">
-                       <div class="col" style="font-weight: bold">ID</div>
-                       <div class="col" style="font-weight: bold">Name</div>
-                       <div class="col" style="font-weight: bold">Surname</div>
-                       <div class="col" style="font-weight: bold">Mobile</div>
-                       <div class="col" style="font-weight: bold">Address</div>
-                       <div class="col" style="font-weight: bold">Make</div>
-                       <div class="col" style="font-weight: bold">Model</div>
-                       <div class="col" style="font-weight: bold">FuelType</div>
-                       <div class="col" style="font-weight: bold">Engine Size</div>
-                       <div class="col" style="font-weight: bold">Car Mileage</div>
-                       <div class="col" style="font-weight: bold">ProblemDesc</div>
-                       <div class="col" style="font-weight: bold">Date Added</div>
+                   <div class="row" style="width:100%">
+                       <div class="col" style="font-weight: bold;color: rgb(51, 102, 204)">ID</div>
+                       <div class="col" style="font-weight: bold;color: rgb(51, 102, 204)">Name</div>
+                       <div class="col" style="font-weight: bold;color: rgb(51, 102, 204)">Surname</div>
+                       <div class="col" style="font-weight: bold;color: rgb(51, 102, 204)">Mobile</div>
+                       <div class="col" style="font-weight: bold;color: rgb(51, 102, 204)">Address</div>
+                       <div class="col" style="font-weight: bold;color: rgb(51, 102, 204)">Make</div>
+                       <div class="col" style="font-weight: bold;color: rgb(51, 102, 204)">Model</div>
+                       <div class="col" style="font-weight: bold;color: rgb(51, 102, 204)">FuelType</div>
+                       <div class="col" style="font-weight: bold;color: rgb(51, 102, 204)">Engine Size</div>
+                       <div class="col" style="font-weight: bold;color: rgb(51, 102, 204)">Car Mileage</div>
+                       <div class="col" style="font-weight: bold;color: rgb(51, 102, 204)">ProblemDesc</div>
+                       <div class="col" style="font-weight: bold;color: rgb(51, 102, 204)">Date Added</div>
                        
                    </div>
                    <div class="row" ng-repeat="x in names" >
-                       <div class="col">{{ x.ID }}</div>
-                       <div class="col">{{ x.Name }}</div>
-                       <div class="col">{{ x.Surname }}</div>
-                       <div class="col">{{ x.Mobile }}</div>
-                       <div class="col">{{ x.Addr }}</div>
-                       <div class="col">{{ x.Make }}</div>
-                       <div class="col">{{ x.Model }}</div>
-                       <div class="col">{{ x.FuelType }}</div>
-                       <div class="col">{{ x.EngSize }}</div>
-                       <div class="col">{{ x.CarMil }}</div>
-                       <div class="col">{{ x.ProblemDesc }}</div>
-                       <div class="col">{{ x.Date }}</div>
+                       <div class="col" style="font-weight: bold;color: rgb(51, 102, 204)" >{{ x.ID }}</div>
+                       <div class="col" style="color:rgb(255, 0, 0)">{{ x.Name }}</div>
+                       <div class="col" style="color:rgb(255, 0, 0)">{{ x.Surname }}</div>
+                       <div class="col" style="color:rgb(255, 0, 0)">{{ x.Mobile }}</div>
+                       <div class="col" style="color:rgb(255, 0, 0)">{{ x.Addr }}</div>
+                       <div class="col" style="color:rgb(255, 0, 0)">{{ x.Make }}</div>
+                       <div class="col" style="color:rgb(255, 0, 0)">{{ x.Model }}</div>
+                       <div class="col" style="color:rgb(255, 0, 0)">{{ x.FuelType }}</div>
+                       <div class="col" style="color:rgb(255, 0, 0)">{{ x.EngSize }}</div>
+                       <div class="col" style="color:rgb(255, 0, 0)">{{ x.CarMil }}</div>
+                       <div class="col" style="color:rgb(255, 0, 0)">{{ x.ProblemDesc }}</div>
+                       <div class="col" style="color:rgb(255, 0, 0)">{{ x.Date }}</div>
                     </div>              
                 </div>
         </ion-list>
