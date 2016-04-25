@@ -7,11 +7,26 @@
                <div ng-controller="ctrlSearchCustomers"> 
                     <form style="" class="list">
                         <label style="" name="searchId" class="item item-input">
-                            <span class="input-label">Search:</span>
+                            <span class="input-label">Search by ID:</span>
                             <input placeholder="ID" type="text" ng-model="id" name="id">
                         </label>
                             <button class="button button-balanced  icon-left ion-ios-search" style="border-radius:15px 15px 15px 15px;" 
-                                    id="search-button7" ng-click="search()">Search by ID</button>
+                                    id="search-button7" ng-click="search()">Search</button>
+                        
+                        <!-- search by name-->
+                         <label style="" name="searchByName" class="item item-input">
+                            <span class="input-label">Search by Model:</span>
+                            <input placeholder="Car Make" type="text" ng-model="make" name="make">
+                        </label>
+                            <button class="button button-balanced  icon-left ion-ios-search" style="border-radius:15px 15px 15px 15px;" 
+                                    id="search-button8" ng-click="searchByMake()">Search</button>
+                        <!-- search by fuel type-->
+                         <label style="" name="searchByFuelType" class="item item-input">
+                            <span class="input-label">Fuel Type :</span>
+                            <input placeholder="Car Make" type="text" ng-model="fuel" name="fuel">
+                        </label>
+                            <button class="button button-balanced  icon-left ion-ios-search" style="border-radius:15px 15px 15px 15px;" 
+                                    id="search-button9" ng-click="searchByFuel()">Search</button>
                     </form>
                     
                    <div class="row">
