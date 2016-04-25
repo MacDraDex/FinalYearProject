@@ -1,0 +1,54 @@
+<ion-view style="" id="page3" title="AddRecord">
+    <ion-content class="has-header" overflow-scroll="true" padding="true">
+        <div ng-controller="ctrlInsert">
+            <form style="" class="list">
+                <div style="color: rgb(0, 0, 0); text-align: center;" id="addRecord-markdown8">
+                    <p>
+                        <strong>Car and Owner Details</strong>
+                    </p>
+                </div>
+                <label style="" name="firstName" class="item item-input" >
+                    <span class="input-label">Firstname:</span>
+                    <input placeholder="Client Name" type="text" ng-model="name" name="name">
+                </label>
+                <label style="" name="secondName" class="item item-input">
+                    <span class="input-label">Surname:</span>
+                    <input placeholder="Client Second Name" type="text" ng-model="surname" name="surname">
+                </label>
+                <label style="" name="mobileNo" class="item item-input">
+                    <span class="input-label">Mobile:</span>
+                    <input placeholder="Client Mobile No" type="text" ng-model="mobile" name="mobile">
+                </label>
+                <label style="" name="address" class="item item-input">
+                    <span class="input-label">Address:</span>
+                    <input placeholder="Address" type="text" ng-model="addr" name="addr">
+                </label>
+                <label style="" name="carMake" class="item item-input">
+                    <span class="input-label">Car Make:</span>
+                    <input placeholder="Example: BMW" type="text" ng-model="make" name="make">
+                </label>
+                <label style="" name="carModel" class="item item-input">
+                    <span class="input-label">Car Model:</span>
+                    <input placeholder="Example: 3-series" type="text" ng-model="model" name="model">
+                </label>
+                <label style="" name="fuel" class="item item-input">
+                    <span class="input-label">Fuel:</span>
+                    <input placeholder="Petrol/Diesel"  type="text" ng-model="fuelType" name="fuelType">
+                </label>
+                <label style="" name="engineCC" class="item item-input">
+                    <span class="input-label">Engine CC:</span>
+                    <input placeholder="1999" type="text" ng-model="engSize" name="engSize">
+                </label>
+                <label style="" name="mileage" class="item item-input">
+                    <span class="input-label">Mileage:</span>
+                    <input placeholder="100000km" type="text" ng-model="carMil" name="carMil">
+                </label>
+                <label style="" name="description" class="item item-input">
+                    <span class="input-label">Description:</span>
+                    <input placeholder="Problem Description" type="text" ng-model="problemDesc" name="problemDesc">
+                </label>
+            </form>
+            <button class="button button-positive  button-block" style="font-weight:bold;" id="addRecord-button4" ng-click="insert()">Submit!</button>
+        </div>        
+    </ion-content>
+</ion-view>
