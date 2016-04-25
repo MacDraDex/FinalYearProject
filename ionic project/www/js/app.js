@@ -47,6 +47,35 @@ app.controller('ctrlSearchCustomers', function($scope, $http) {
             alert("error");
         })
     }
+    $scope.searchByMake = function() {
+        $http({
+              method: 'GET',
+              url: "http://localhost/searchByMake.php",
+              params: {make: $scope.make}
+            })
+          .success(function(data) {
+            $scope.record = data;
+            console.log($scope.record);
+        })
+          .error(function(data) {
+            alert("error");
+        })
+    }
+     $scope.searchByFuel = function() {
+        $http({
+              method: 'GET',
+              url: "http://localhost/searchByFuel.php",
+              params: {fuel: $scope.fuel}
+            })
+          .success(function(data) {
+            $scope.record = data;
+            console.log($scope.record);
+        })
+          .error(function(data) {
+            alert("error");
+            deferred.reject('No such record.');
+        })
+    }
 });
 
 //controller to delete customer from database by ID in progress
